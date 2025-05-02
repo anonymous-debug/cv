@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>MyCV</title>
   <link rel="stylesheet" href="style.css"  >
+
 </head>
 <body>
   <div class="container">
@@ -23,23 +24,23 @@
       </div>
       <div class="skills">
         <h3>Bacarıqlar</h3>
-        <ul>
-          <li>Layihə İdarəetmə</li>
-          <li>Qrup işi</li>
-          <li>Təşkilatçı</li>
-          <li>Effektiv Ünsiyyət</li>
-          
-        </ul>
+        <input type="text" id="taskInput" placeholder="Yeni bacariq">
+        <button onclick="addTask()" id="btn">Əlavə et</button>
+      
+        <ul id="taskList"></ul>
+      
+
+       
       </div>
       <div class="languages">
-        <h3>Dil bilikləri</h3>
+        <h3 id="lang-header">Dil bilikləri</h3>
         <p>English (səlist)</p>
         <p>German (orta)</p>
         <p>Spanish (çox az)</p>
       </div>
     </aside>
     <main class="content">
-      <h1><span class="bold">Ülvi</span> Ağayev</h1>
+      <h1 class="my-name"><span class="bold">Ülvi</span> Ağayev</h1>
       <h2>İnformation Security student </h2>
       <section class="profile">
         <h3>Profile</h3>
@@ -77,5 +78,8 @@
       </section>
     </main>
   </div>
+
+  <script src="app.js"></script>
+
 </body>
 </html>

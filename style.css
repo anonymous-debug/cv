@@ -10,6 +10,32 @@ body {
     margin: 0 auto;
     background: white;
   }
+
+  #btn {
+    background-color: blue;
+    /* color: white
+    ; */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #btn:hover {
+    background-color: darkblue;
+  }
+
+
+  #lang-header{
+    color: antiquewhite;
+
+  }
+
+  #lang-header:hover{
+    color: blue;
+  }
+
+
   
   .sidebar {
     width: 30%;
