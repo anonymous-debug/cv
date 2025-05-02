@@ -8,10 +8,31 @@ function addTask() {
     li.textContent = taskText;
 
     const btn = document.createElement("button");
+    btn.classList.add("delete")
     btn.textContent = "Sil";
     btn.onclick = () => li.remove();
 
     li.appendChild(btn);
     document.getElementById("taskList").appendChild(li);
+    input.value = "";
+  }
+
+
+  function addLanguage() {
+    const input = document.getElementById("lang");
+    const taskText = input.value.trim();
+
+    if (taskText === "") return;
+
+    const li = document.createElement("li");
+    li.textContent = taskText;
+
+    const btn = document.createElement("button");
+    btn.classList.add("delete")
+    btn.textContent = "Sil";
+    btn.onclick = () => li.remove();
+
+    li.appendChild(btn);
+    document.getElementById("langList").appendChild(li);
     input.value = "";
   }
