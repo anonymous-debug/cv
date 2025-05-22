@@ -82,18 +82,9 @@ section {
   padding-left: 20px;
 }
 
-.delete {
-  margin-left: 10px;
-}
-
-
-
-
-
-
 .error {
   color: red;
   font-size: 0.9em;
-  height: 18px; /* boş olduqda sahəni saxlasın */
+  height: 18px;
   margin-bottom: 8px;
 }

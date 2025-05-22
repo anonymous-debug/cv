@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
   <meta charset="UTF-8" />
   <title>MyCV</title>
@@ -10,40 +10,42 @@
     <aside class="sidebar">
       <img src="https://i.redd.it/m2yw6fb2tvq81.jpg" alt="Pr" class="profile-pic" />
       <div class="contact">
-        <h3>Contact</h3>
+        <h3>Əlaqə</h3>
         <p>+994-51-418-77-01</p>
         <p>ulviagayev@gmail.com</p>
         <p>Baku Yasamal</p>
       </div>
       <div class="education">
-        <h3>Tehsil</h3>
+        <h3>Təhsil</h3>
         <p>2024 - 2028<br /><strong>Azerbaijan Technical University</strong><br />Information Security</p>
       </div>
       <div class="skills">
         <h3>Bacarıqlar</h3>
-        <input type="text" id="taskInput" placeholder="Yeni bacariq" />
+        <input type="text" id="taskInput" placeholder="Yeni bacarıq" />
         <button onclick="addTask()" id="btn">Əlavə et</button>
-        <ul id="taskList"></ul>
-        <li>Qrupla iş</li>
+        <ul id="taskList">
+          <li>Qrupla iş</li>
+        </ul>
       </div>
       <div class="languages">
         <h3 id="lang-header">Dil bilikləri</h3>
         <input type="text" id="lang" placeholder="Yeni dil" />
         <button onclick="addLanguage()" id="btn">Əlavə et</button>
-        <ul id="langList"></ul>
-        <li>English (səlist)</li>
+        <ul id="langList">
+          <li>English (səlist)</li>
+        </ul>
       </div>
     </aside>
+
     <main class="content">
       <h1 class="my-name"><span class="bold">Ülvi</span> Ağayev</h1>
-      <h2>İnformation Security student</h2>
-      
-      <!-- Form bölməsi -->
+      <h2>Information Security student</h2>
+
       <section class="form-section">
         <h3>Əlavə Məlumatlar</h3>
         <form id="cvForm" novalidate>
           <label for="fullName">Ad *</label><br />
-          <input type="text" id="fullName" name="fullName" required minlength="3" /><br />
+          <input type="text" id="fullName" name="fullName" required /><br />
           <span class="error" id="nameError"></span><br />
 
           <label for="email">E-poçt *</label><br />
@@ -55,22 +57,24 @@
           <span class="error" id="dateError"></span><br />
 
           <label for="description">Təsvir *</label><br />
-          <textarea id="description" name="description" required minlength="10"></textarea><br />
+          <textarea id="description" name="description" required></textarea><br />
           <span class="error" id="descError"></span><br />
 
           <button type="button" id="saveBtn">Yadda Saxla</button>
+          <button type="button" id="resetBtn">Hamısını Sıfırla</button>
         </form>
       </section>
 
       <section class="profile">
-        <h3>Profile</h3>
+        <h3>Profil</h3>
         <p>Şəbəkə təhlükəsizliyi, zəifliklərin qiymətləndirilməsi və penetrasiya testləri sahəsində əsas biliklərə malik, gələcəkdə peşəkar kiber təhlükəsizlik mütəxəssisi olmağı qarşısına məqsəd qoymuş tələbəyəm.</p>
       </section>
+
       <section class="experience">
-        <h3>İş təcrübələri</h3>
+        <h3>İş təcrübəsi</h3>
         <div class="job">
-          <strong>CERT.AZ</strong> | 2023 <br />
-          Virtualizasiya və Bulud Xidmətləri <br />
+          <strong>CERT.AZ</strong> | 2023<br />
+          Virtualizasiya və Bulud Xidmətləri<br />
           <ul>
             <li>VMWare, Hyper-V, KVM kimi texnologiyalarla işləmək</li>
           </ul>
@@ -89,13 +93,15 @@
           </ul>
         </div>
       </section>
+
       <section class="references">
-        <h3>Reference</h3>
+        <h3>Referanslar</h3>
         <p><strong>Emil Hacıyev </strong><br />+994-51-415-90-12<br />Emillevi@gmail.com</p>
-        <p><strong>Sönməz Məmmədov</strong><br /><br />+994-51-428-07-39<br />sonmezv@gmail.com</p>
+        <p><strong>Sönməz Məmmədov</strong><br />+994-51-428-07-39<br />sonmezv@gmail.com</p>
       </section>
     </main>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
